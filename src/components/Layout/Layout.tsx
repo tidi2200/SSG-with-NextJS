@@ -7,7 +7,9 @@ export default function Layout ({ children }: { children: ReactElement }) {
     return (
         <>
             <Header/>
-            <main className={styles.main}>{children}</main>
+            <div className={styles.container}>
+                <main className={styles.main}>{children}</main>
+            </div>
             <Footer/>
         </>
     )
